@@ -37,7 +37,8 @@ public class studentGrades {
 
         int originalValue = 50;
         System.out.println("Value before method call: " + originalValue);
-        passByValue(originalValue);
+        int val = passByValue(originalValue);
+        System.out.println(passByValue(originalValue));
         System.out.println("Value after method call: " + originalValue);
 
     }
@@ -74,7 +75,7 @@ public class studentGrades {
         return Math.max(highest, highestMarks(marks, studentIndex-1));
     }
 
-    public static void passByValue(int value){
-            value = 10;
+    public static int passByValue(int value){
+            return value = 10;
     }
 }
